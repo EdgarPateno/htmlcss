@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <title>Invoice from Pateno Jewellers</title>
+  
+  </head> 
+
+  <style>
+
+    body {
+      background-image:url(invoice\ background.png); 
+      padding-left: 50px; 
+      padding-right: 50px;
+    }  
+
+    th, td {
+      border: 1px solid grey;
+    }
+
+    tr > td > textarea {
+      width: 99%;
+    }
+
+    tr > td > input {
+      width: 150px;
+      text-align: center;
+    }
+
+    h2, p, legend {
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    fieldset {
+      width: 500px; 
+      margin-bottom: 20px;
+      margin-top: 20px; 
+      border: 2px solid black;
+    }
+
+    hr.dashed {
+      border: 1px solid black;
+      margin-top: 20px;
+    }
+
+  </style>
+
+<body>
+
+  <form action="https://google.com" method="get" target="_blank">
+
+      <!-- letterhead section -->
+    <p><img src="invoice form logo.png" /></p>
+    <div style="text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+        <i class="fa fa-building" style="font-size:18px"></i> The Queen City of the South - Cebu <br>
+        <i class="fa fa-envelope" style="font-size:18px"></i> support@edgarpatenojewellers.com<br>
+        <i class="fa fa-globe" style="font-size:18px"></i>  https://edgarpatenojewellers.com <br>   
+        <i class="fa fa-phone" style="font-size:18px"></i> +639991234567  
+      </div>
+    </div>
+   
+    <div>
+     <span style="font-size:40px; text-align: left;">INVOICE</span><br>      
+     <label for="invoiceNumber" style="font-size:12px;">INVOICE #:</label>
+     <input type="number" name="invoiceNumber" size="15" />
+    </div>
+  
+  <hr class="dashed">
+
+      <!-- invoice details section -->
+  <fieldset><legend style="font-weight:700;">Invoice Details</legend>
+    <div style="margin-bottom:10px;">
+     <label for="invoice">Invoice To:</label>
+     <input type="text" name="FullName" maxlength="50" size="50" placeholder="Enter Full Name" />
+    </div>
+
+    <div>
+     <label for="phone" style="padding-right:2px;">Contact #:</label>
+     <input type="text" name="phone" maxlength="15" placeholder="Enter Number" />
+
+     <label for="date">Invoice Date:</label>
+     <input type="date" name="date" />
+    </div>
+  </fieldset>
+
+      <!-- table section -->
+  <table style="text-align: center;">
+    
+    <thead>
+      <tr style="background-color:darkolivegreen; color: white;">
+       <th style="width:70%">Item Description</th>
+       <th style="width:10%">Quantity</th>
+       <th style="width:10%">Unit Price (USD)</th>
+       <th style="width:10%">Amount (USD)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+       <td><textarea name="item_1" rows="2" maxlength="100" placeholder="Enter product details"></textarea></td>
+       <td><input type="number" name="quantity1" placeholder="Enter quantity" /></td>
+       <td><input type="number" name="price1" placeholder="Enter price" /></td>
+       <td><input type="number" name="amount" placeholder="Enter amount" /></td>     
+      </tr>
+
+      <tr>
+        <td><textarea name="item_2" rows="2" maxlength="100" placeholder="Enter product details"></textarea></td>
+        <td><input type="number" name="quantity2" placeholder="Enter quantity" /></td>
+        <td><input type="number" name="price2" placeholder="Enter price" /></td>
+        <td><input type="number" name="amount" placeholder="Enter amount" /></td>     
+      </tr>
+
+      <tr>
+        <td><textarea name="item_3" rows="2" cols="55" maxlength="100" placeholder="Enter product details"></textarea></td>
+        <td><input type="number" name="quantity3" placeholder="Enter quantity" /></td>
+        <td><input type="number" name="price3" placeholder="Enter price" /></td>
+        <td><input type="number" name="amount" placeholder="Enter amount" /></td>     
+      </tr>
+    
+      <tr>
+        <td><textarea name="item_4" rows="2" cols="55" maxlength="100" placeholder="Enter product details"></textarea></td>
+        <td><input type="number" name="quantity4" placeholder="Enter quantity" /></td>
+        <td><input type="number" name="price4" placeholder="Enter price" /></td>
+        <td><input type="number" name="amount" placeholder="Enter amount" /></td>     
+      </tr>
+
+      <tr>
+        <td colspan="3" style="text-align: right;">Subtotal</td>
+        <td style="text-align: center;"></td>           
+      </tr>
+
+      <tr>
+        <td colspan="3" style="text-align: right;">VAT (12%)</td>
+        <td style="text-align: center;"></td>           
+      </tr>
+
+      <tr style="background-color: yellow;">
+        <td colspan="3" style="text-align: right; font-weight: 700;">TOTAL</td>
+        <td style="text-align: center; font-weight: 700;"></td>           
+      </tr>
+
+    </tbody>
+  </table>
+
+      <!-- additional details section -->
+  <fieldset>
+  <legend style="font-weight:700;">Additional Details</legend>
+  
+     <div>
+     <label>Payment Method:</label>
+       <select name="paymentmethod" Payment Method: required >
+         <option value="">-- Select Method --</option> 
+         <option value="mastercard">Mastercard</option>
+         <option value="visa">Visa</option>
+         <option value="discover">Discover</option>
+         <option value="jbc">JBC</option>
+         <option value="amex">American Express</option>
+       </select>
+     </div>
+
+    <div style="margin-top: 20px;">
+       <input type="radio" id="homeAddress" name="address" value="home" /> 
+       <label for="homeAddress">Home</label>  
+       <input type="radio" id="officeAddress" name="address" value="office" />
+       <label for="officeAddress">Office</label> 
+    </div>
+
+    <div style="margin-top: 20px;">
+      <textarea rows="4" maxlength="500" name="address" placeholder="Enter your complete address here" style="width:98%;"></textarea>
+    </div>
+
+  </fieldset>
+ 
+    <!-- SUBMIT button -->
+  <input type="submit" 
+     value="Submit" 
+     style="width: 530px; 
+     height: 30px;
+     background-color: darkolivegreen; 
+     color: white; 
+     border: 1px solid darkolivegreen;
+     cursor: pointer;" 
+  />
+
+  </form>
+
+<div style="margin-bottom:40px;"></div>
+
+</body>
+</html>
