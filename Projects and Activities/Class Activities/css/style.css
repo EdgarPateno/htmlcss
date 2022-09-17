@@ -1,39 +1,82 @@
+body {
+    margin: 60px 20px 5px;
+}
 
 .page-wrapper {
-    max-width: 1024px;
+    max-width: 100%;
     background-color: rgba(206, 205, 182, 0.534);
-    margin: 60px auto;
-    padding: 40px;
+    margin: 0px auto;
 }
+
 header {
-    height: 50px;
-    width: 1024px;
+    height: 60px;
+    width: 1920px;
     background-color: black;
     color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;        
 }
+
 .banner {
-    background-image: url('../css/Blue\ Sea\ Under\ Clear\ Blue\ Sky.jpg');
-    height:300px;
-    width: 1024px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('web-development-background.png');
+    background-blend-mode: lighten;
+    height:400px;
+    width: 100%;
     background-size: cover;
-    background-position: top;
+    
 }
+
 h1 {
     text-align: center;
-    font-size: 40px;
-    color: coral;
-    padding-top: 20px;
+    font-size: 80px;
+    color: black;
+    padding-top: 30px;
 }
+
 h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     color: black;
 }
+
 .about-me p {
     font-size: 21px;
     line-height: 30px;
     text-align: justify;
 }
+
 section.about-me {
-    margin: 40px 0;
+    margin: 40px 20px;
+}
+
+section.my-portfolio div {    
+    color: black;       
+}
+
+.my-portfolio h3 {
+    margin-left: 20px;
+}
+
+.my-portfolio {
+    display: inline;
+    width: 800px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.d-inline {
+    width: 280px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px; 
+    background-color: white;
+    box-shadow: 10px 10px grey;
+    margin-right: 20px;
+    margin-bottom: 20px;       
 }
