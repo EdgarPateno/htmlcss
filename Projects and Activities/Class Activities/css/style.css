@@ -142,7 +142,7 @@ section.my-portfolio div {
 
 .grid-container>div {
     border: 1px solid coral;
-    line-height: 60px;
+    line-height: 100px;
 }
 
 .grid-container .box1 {
