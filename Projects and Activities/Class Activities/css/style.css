@@ -97,7 +97,7 @@ section.my-portfolio div {
 .basic-grid>div, .advanced-grid>div {
     border: 1px solid black;    
     text-align: center;
-    line-height: 52px;
+    line-height: 100px;
     background-color: chocolate;
 }
 
