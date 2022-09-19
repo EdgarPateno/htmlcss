@@ -134,15 +134,16 @@ section.my-portfolio div {
 .grid-container {    
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: darkcyan;
+    background-color: #FFA500;
     gap: 5px;
     padding: 5px; 
     text-align: center;  
 }
 
 .grid-container>div {
-    border: 1px solid coral;
+    border: 1px solid #FFA500;
     line-height: 100px;
+    background-color: #FFEDCC;
 }
 
 .grid-container .box1 {
@@ -164,15 +165,16 @@ section.my-portfolio div {
 .super-grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    background-color: plum;
+    background-color: #FFA500;
     gap: 5px;
     padding: 5px; 
     text-align: center; 
 }
 
 .super-grid>div {
-    border: 1px solid black;
+    border: 1px solid #FFA500;
     line-height: 100px;
+    background-color: #FFEDCC;
 }
 
 .super-grid .area5 {
