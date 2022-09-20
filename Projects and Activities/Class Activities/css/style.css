@@ -9,10 +9,11 @@ body {
     margin: 0px auto;
 }
 
+
 header {
-    height: 60px;
+    background-color: #000;
+    height: 50px;
     width: 1920px;
-    background-color: black;
     color: white;
     position: fixed;
     top: 0px;
@@ -20,13 +21,62 @@ header {
     right: 0px;        
 }
 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: 600;
+  }
+  
+  .navbar ul li:hover {
+    background-color: green;
+  }
+
+  .navbar ul li:hover a {
+    color: yellow;
+  }
+
+  @media screen and (max-width: 425px) {
+    .banner {
+        background-color: blue;
+        background-image: hidden;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .navbar ul li {
+        display:block;
+    }
+    header {
+        position:absolute; 
+        height:auto;
+        background-color: #333333cc;
+    } 
+    .banner {
+        margin-top:280px;
+    }
+  }
+  
+
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('web-development-background.png');
     background-blend-mode: lighten;
     height:400px;
     width: 100%;
     background-size: cover;
-    
 }
 
 h1 {
