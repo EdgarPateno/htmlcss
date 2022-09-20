@@ -52,7 +52,8 @@ header {
   @media screen and (max-width: 425px) {
     .banner {
         background-color: blue;
-        background-image: hidden;
+        background-image: none;
+        display: none;
     }
   }
 
