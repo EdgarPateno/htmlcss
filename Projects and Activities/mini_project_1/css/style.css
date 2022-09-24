@@ -1,0 +1,67 @@
+
+div#announcement-banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+#navbarText > form > button {
+    background-color: #329BD1;
+    color: white;
+}
+
+div ul li:hover {
+    background-color: #329BD1;
+}
+
+div.sticky-top > nav > div > form > button {
+    background-color: #329BD1;
+    border: none;
+    color: white;
+}
+
+div.sticky-top > nav > div > form > button:hover {
+    background-color: #329BD1;
+}
+
+/* for homepage first banner section */
+.homepage_banner {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+  
+.bottom-left {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.homepage-banner-button {
+    background-color: #329BD1;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.homepage-banner-button:hover {
+    color: goldenrod;
+}
+ /* end of homepage first banner section */ 
+
+
+
+
+ .bd-code-snippet .bd-example {
+    margin: 0;
+    border: 0;
+}

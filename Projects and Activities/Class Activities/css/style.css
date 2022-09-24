@@ -4,50 +4,26 @@ body {
 }
 
 .page-wrapper {
-    max-width: 100%;
+    max-width: 90%;
     background-color: rgba(206, 205, 182, 0.534);
     margin: 0px auto;
 }
 
-
-header {
-    background-color: #000;
-    height: 50px;
-    width: 1920px;
-    color: white;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;        
+div > div.navbar-nav a:hover {
+    background-color: #FFA500;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;    
-  }
-  
-  .navbar ul li {
-    display: inline-block;
-  }
-  
-  .navbar ul li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    line-height: 50px;
-    font-weight: 600;
-  }
-  
-  .navbar ul li:hover {
-    background-color: green;
-  }
+div > div.navbar-nav a {
+    color: #004aad;
+}
 
-  .navbar ul li:hover a {
-    color: yellow;
-  }
+section.about-me {
+    margin: 0 10px;
+}
+
+section.my-portfolio {
+    margin: 0 10px;
+}
 
   @media screen and (max-width: 425px) {
     .banner {
@@ -61,6 +37,7 @@ header {
     .navbar ul li {
         display:block;
     }
+
     header {
         position:absolute; 
         height:auto;
@@ -70,68 +47,6 @@ header {
         margin-top:280px;
     }
   }
-  
-
-.banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('web-development-background.png');
-    background-blend-mode: lighten;
-    height:400px;
-    width: 100%;
-    background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    font-size: 80px;
-    color: black;
-    padding-top: 30px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 40px;
-    color: black;
-}
-
-.about-me p {
-    font-size: 21px;
-    line-height: 30px;
-    text-align: justify;
-}
-
-section.about-me {
-    margin: 40px 20px;
-}
-
-section.my-portfolio div {    
-    color: black;       
-}
-
-.my-portfolio h3 {
-    margin-left: 20px;
-}
-
-.my-portfolio {
-    display: inline;
-    width: 800px;
-}
-
-.d-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.d-inline {
-    width: 280px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px; 
-    background-color: white;
-    box-shadow: 10px 10px grey;
-    margin-right: 20px;
-    margin-bottom: 20px;       
-}
 
 .basic-grid, .advanced-grid {
     display: grid;
@@ -243,3 +158,41 @@ section.my-portfolio div {
     background-color: #00FFFF;
 }
 
+.card {
+    width: auto;
+    border: 2px solid #004aad;
+    text-align: center;
+}
+
+/* for work experiences */
+div#work-experience div div {
+    border: 1px solid black;
+}
+
+
+/* styles for exercise 10 bootstrap invoice */
+
+
+
+  div.invoice-form-logo {
+      text-align: center;
+      margin: 10px;
+  }
+
+  #col-2 {
+      margin-top: 12px;
+  }
+
+  div#item-description div {
+      text-align: center;      
+  }
+
+  div#item-description div label {
+      font-size: 16px; 
+      font-weight: 700;    
+      background-color: #329BD1; 
+  }
+
+  .subtotal, .vat, .total {
+      text-align: right;
+  }
