@@ -20,181 +20,190 @@
 
  
 <body>
- <div class="container">
-  <form action="https://google.com" method="get" target="_blank">
 
-      <!-- letterhead section -->
-    <div class="invoice-form-logo"><img src="invoice form logo.png" /></div>
-    <div style="text-align: center;">
-      <div style="display: inline-block; text-align: left;">
-        <i class="fa fa-building" style="font-size:18px"></i> The Queen City of the South - Cebu <br>
-        <i class="fa fa-envelope" style="font-size:18px"></i> support@edgarpatenojewellers.com<br>
-        <i class="fa fa-globe" style="font-size:18px"></i>  https://edgarpatenojewellers.com <br>   
-        <i class="fa fa-phone" style="font-size:18px"></i> +639991234567  
+  <div class="container">
+
+    <form action="https://google.com" method="get" target="_blank">
+
+        <!-- letterhead section -->
+      <div class="invoice-form-logo"><img src="invoice form logo.png" /></div>
+      <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+          <i class="fa fa-building" style="font-size:18px"></i> The Queen City of the South - Cebu <br>
+          <i class="fa fa-envelope" style="font-size:18px"></i> support@edgarpatenojewellers.com<br>
+          <i class="fa fa-globe" style="font-size:18px"></i>  https://edgarpatenojewellers.com <br>   
+          <i class="fa fa-phone" style="font-size:18px"></i> +639991234567  
+        </div>
       </div>
-    </div>
-   
-        <section class="invoice-form">
+      <!-- end of letterhead section -->
+    
+      <section class="invoice-form">
 
-            <div class="row my-5">
-                <div class="col-4">
-                    
-                    <label class="h6">Invoice to:</label>
-                    <input type="text" class="form-control" name="invoice-to" placeholder="Enter customer name">
+          <div class="row my-5">
+              <div class="col-4">
+                      
+                <label class="h6">Invoice to:</label>
+                <input type="text" class="form-control" name="invoice-to" placeholder="Enter customer name">
 
-                    <label class="h6">Contact Number:</label>
-                    <input type="text" class="form-control" name="contact-number" placeholder="Enter contact number">
+                <label class="h6">Contact Number:</label>
+                <input type="text" class="form-control" name="contact-number" placeholder="Enter contact number">
 
-                    <label class="h6">Invoice Date:</label>
-                    <input type="date" class="form-control" name="invoice-date">
-                </div>
-            </div>
+                <label class="h6">Invoice Date:</label>
+                <input type="date" class="form-control" name="invoice-date">
+              </div>
+          </div>
 
-            <div id="item-description" class="row mb-3">
-                <div class="col-6">
-                  <label class="form-control">Item Description</label>
-                </div>
+          <div id="item-description" class="row mb-3">
+              <div class="col-6">
+                <label class="form-control">Item Description</label>
+              </div>
 
-                <div class="col-2">
-                    <label class="form-control">Quantity</label>
-                </div>
+              <div class="col-2">
+                <label class="form-control">Quantity</label>
+              </div>
 
-                <div class="col-2">
-                    <label class="form-control">Unit Price (USD)</label>
-                </div>
+              <div class="col-2">
+                <label class="form-control">Unit Price (USD)</label>
+              </div>
 
-                <div class="col-2">
-                    <label class="form-control">Amount (USD)</label>
+              <div class="col-2">
+                <label class="form-control">Amount (USD)</label>
+              </div>
+          </div> 
+
+          <div class="row mb-2">
+              <div class="col-6">
+                <textarea class="form-control" placeholder="Enter product details" name="item1"></textarea>
+              </div>
+
+              <div id="col-2" class="col-2">
+                <input type="number" class="form-control" placeholder="Enter quantity" name="quantity1">
+              </div>
+
+              <div id="col-2" class="col-2">
+                <input type="number" class="form-control" placeholder="Enter price" name="price1">
+              </div>
+
+              <div id="col-2" class="col-2">
+                <input type="number" class="form-control" placeholder="Enter amount" name="amount1">
+              </div>
+          </div>
+
+          <div class="row mb-2">
+              <div class="col-6">
+                <textarea class="form-control" placeholder="Enter product details" name="item2"></textarea>
+              </div>
+
+              <div id="col-2" class="col-2">
+                <input type="number" class="form-control" placeholder="Enter quantity" name="quantity2">
+              </div>
+              
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter price" name="price2">
                   </div>
-            </div> 
-
-            <div class="row mb-2">
-                <div class="col-6">
-                    <textarea class="form-control" placeholder="Enter product details" name="item1"></textarea>
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter quantity" name="quantity1">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter price" name="price1">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter amount" name="amount1">
-                </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter amount" name="amount2">
+                  </div>
             </div>
 
             <div class="row mb-2">
-                <div class="col-6">
-                    <textarea class="form-control" placeholder="Enter product details" name="item2"></textarea>
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter quantity" name="quantity2">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter price" name="price2">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter amount" name="amount2">
-                </div>
+                  <div class="col-6">
+                      <textarea class="form-control" placeholder="Enter product details" name="item3"></textarea>
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter quantity" name="quantity3">
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter price" name="price3">
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter amount" name="amount3">
+                  </div>
             </div>
 
             <div class="row mb-2">
-                <div class="col-6">
-                    <textarea class="form-control" placeholder="Enter product details" name="item3"></textarea>
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter quantity" name="quantity3">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter price" name="price3">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter amount" name="amount3">
-                </div>
+                  <div class="col-6">
+                      <textarea class="form-control" placeholder="Enter product details" name="item4"></textarea>
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter quantity" name="quantity4">
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter price" name="price4">
+                  </div>
+                  <div id="col-2" class="col-2">
+                      <input type="number" class="form-control" placeholder="Enter amount" name="amount4">
+                  </div>
             </div>
 
             <div class="row mb-2">
-                <div class="col-6">
-                    <textarea class="form-control" placeholder="Enter product details" name="item4"></textarea>
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter quantity" name="quantity4">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter price" name="price4">
-                </div>
-                <div id="col-2" class="col-2">
-                    <input type="number" class="form-control" placeholder="Enter amount" name="amount4">
-                </div>
+                  <div class="col-10">
+                    <label class="form-control subtotal" name="Subtotal">Subtotal</label>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" class="form-control" placeholder="Enter subtotal" name="subtotal">
+                  </div>
             </div>
 
             <div class="row mb-2">
-                <div class="col-10">
-                  <label class="form-control subtotal" name="Subtotal">Subtotal</label>
-                </div>
-                <div class="col-2">
-                  <input type="number" class="form-control" placeholder="Enter subtotal" name="subtotal">
-                </div>
+                  <div class="col-10">
+                    <label class="form-control vat" name="Vat">VAT 12%</label>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" class="form-control" placeholder="Enter VAT" name="vat">
+                  </div>
             </div>
 
             <div class="row mb-2">
-                <div class="col-10">
-                  <label class="form-control vat" name="Vat">VAT 12%</label>
-                </div>
-                <div class="col-2">
-                  <input type="number" class="form-control" placeholder="Enter VAT" name="vat">
-                </div>
+                  <div class="col-10">
+                    <label class="form-control total" name="Subtotal">TOTAL</label>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" class="form-control" placeholder="Enter TOTAL" name="vat">
+                  </div>
             </div>
+      </section>
 
-            <div class="row mb-2">
-                <div class="col-10">
-                  <label class="form-control total" name="Subtotal">TOTAL</label>
-                </div>
-                <div class="col-2">
-                  <input type="number" class="form-control" placeholder="Enter TOTAL" name="vat">
-                </div>
-            </div>
-        </section>
+      <section>
+              <div class="row my-3">
+                  <div class="col-sm-4">
+                    <label class="mb-2">Payment Method:</label>
+                    <select class="form-select" aria-label="Payment-Method">
+                      <option value="">-- Please Select Payment --</option>
+                      <option value="amex">American Express</option>
+                      <option value="master">Mastercard</option>
+                      <option value="visa">VISA</option>
+                      <option value="discover">Discover</option>
+                      <option value="paypal">Paypal</option>
+                    </select>
+                  </div>
+              </div>
 
-        <section>
-            <div class="row my-3">
-                <div class="col-sm-4">
-                  <label class="mb-2">Payment Method:</label>
-                  <select class="form-select" aria-label="Payment-Method">
-                    <option value="">-- Please Select Payment --</option>
-                    <option value="amex">American Express</option>
-                    <option value="master">Mastercard</option>
-                    <option value="visa">VISA</option>
-                    <option value="discover">Discover</option>
-                    <option value="paypal">Paypal</option>
-                  </select>
-                </div>
-            </div>
-
-            <div class="row my-3">
-                <div class="col-sm-4">
-                    <div class="form-check form-check-inline">
-                        <input id="home-address" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="home-address">Home</label>
-                      </div>
+              <div class="row my-3">
+                  <div class="col-sm-4">
                       <div class="form-check form-check-inline">
-                        <input id="office-address" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="office-address">Office</label>
-                      </div>
+                          <input id="home-address" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="home-address">Home</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input id="office-address" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="office-address">Office</label>
+                        </div>
 
-                      <div class="col mt-3">
-                        <textarea class="form-control" rows="5" placeholder="Enter your complete address" name="complete-address"></textarea>
-                      </div>
+                        <div class="col mt-3">
+                          <textarea class="form-control" rows="5" placeholder="Enter your complete address" name="complete-address"></textarea>
+                        </div>
 
-                      <div class="col mt-3">
-                        <input type="submit" class="btn btn-primary" style="width: 200px;" value="Submit" />
-                      </div>
-                </div>
-            </div>
-        </section>
+                        <div class="col mt-3">
+                          <input type="submit" class="btn btn-primary" style="width: 200px;" value="Submit" />
+                        </div>
+                  </div>
+              </div>
+      </section>
     </form>
 
 <div style="margin-bottom:40px;"></div>
-</div>
+  </div>
+
 </body>
 </html>

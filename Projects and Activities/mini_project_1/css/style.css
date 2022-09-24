@@ -7,24 +7,25 @@ div#announcement-banner {
     padding-bottom: 4px;
 }
 
-#navbarText > form > button {
+/* for header section */
+ul.navbar-nav li a {
+    color: black;
+    letter-spacing: 2px;    
+}
+
+ul.navbar-nav li:hover {
+    background-color: #329BD1;
+}
+
+button.btn.btn-outline-success {
     background-color: #329BD1;
     color: white;
 }
 
-div ul li:hover {
+button.btn.btn-outline-success:hover {
     background-color: #329BD1;
 }
-
-div.sticky-top > nav > div > form > button {
-    background-color: #329BD1;
-    border: none;
-    color: white;
-}
-
-div.sticky-top > nav > div > form > button:hover {
-    background-color: #329BD1;
-}
+/* end of header section */
 
 /* for homepage first banner section */
 .homepage_banner {
@@ -58,10 +59,22 @@ div.sticky-top > nav > div > form > button:hover {
 }
  /* end of homepage first banner section */ 
 
+ /* for trust badges section */
+ section.trust-badges {
+    margin: 20px;
+ }
 
-
-
- .bd-code-snippet .bd-example {
-    margin: 0;
-    border: 0;
+ div.card-group div.card {
+    border: none;
+    text-align: center;
 }
+
+.card-img-shipping, .card-img-secure-checkout, .card-img-customer-satisfaction, .card-img-reviews {
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+}
+/* end of trust badges section */
+
+
+/* for test only */

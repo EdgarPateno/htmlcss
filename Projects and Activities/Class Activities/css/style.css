@@ -196,3 +196,8 @@ div#work-experience div div {
   .subtotal, .vat, .total {
       text-align: right;
   }
+
+  label.form-control.subtotal, label.form-control.vat, label.form-control.total {
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
