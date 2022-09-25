@@ -25,6 +25,10 @@ button.btn.btn-outline-success {
 button.btn.btn-outline-success:hover {
     background-color: #329BD1;
 }
+
+li.nav-item a:hover {
+    color: white;
+}
 /* end of header section */
 
 /* for homepage first banner section */
@@ -76,5 +80,25 @@ button.btn.btn-outline-success:hover {
 }
 /* end of trust badges section */
 
+/* collection list section */
+section.collection-list div div div div.card {
+    border: none;
+}
+.checked {
+    color: orange;
+  }
 
-/* for test only */
+  .btn-collection-list {
+    background-color: #329BD1;
+    width: 150px;
+    color: white;
+  }
+
+  a.btn.btn-collection-list:hover {
+    background-color: #329BD1;
+  }
+/* end of collection list section */
+
+/* for image and text section */
+
+
