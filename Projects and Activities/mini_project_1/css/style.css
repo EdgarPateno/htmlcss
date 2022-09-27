@@ -17,17 +17,24 @@ ul.navbar-nav li:hover {
     background-color: #329BD1;
 }
 
-button.btn.btn-outline-success {
+button#navbar-search {
     background-color: #329BD1;
     color: white;
+    border-color: #329BD1;
 }
 
-button.btn.btn-outline-success:hover {
+button#navbar-search:hover {
     background-color: #329BD1;
 }
 
 li.nav-item a:hover {
     color: white;
+}
+
+#navbar-cart-icon {
+    color: #329BD1;
+    position: relative;
+    top: 9px;
 }
 /* end of header section */
 
@@ -63,6 +70,45 @@ li.nav-item a:hover {
 }
  /* end of homepage first banner section */ 
 
+ /* as featured in section */
+ section.as-featured-in div img {
+    width: 200px;
+    height: auto;
+ }
+
+ section.as-featured-in div.card {
+    border: none;
+ }
+ /* end of as featured in section */
+
+/* collection list section */
+section.collection-list div div div div.card {
+    border: none;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .btn-collection-list {
+    background-color: #329BD1;
+    width: 150px;
+    color: white;
+  }
+
+  a.btn.btn-collection-list:hover {
+    background-color: #329BD1;
+  }
+/* end of collection list section */
+
+/* for image and text section */
+a.btn.btn-image-text-homepage {
+    background-color: #329BD1;
+    width: 200px;
+    color: white;
+}
+/* end of image and text section */
+
  /* for trust badges section */
  section.trust-badges {
     margin: 20px;
@@ -80,25 +126,55 @@ li.nav-item a:hover {
 }
 /* end of trust badges section */
 
-/* collection list section */
-section.collection-list div div div div.card {
+/* Footer Section */
+section.site-footer {
+    background-color: black;
+    color: white;
+}
+
+section.site-footer div div div div.card {
     border: none;
 }
-.checked {
-    color: orange;
-  }
 
-  .btn-collection-list {
-    background-color: #329BD1;
-    width: 150px;
+
+ul.list-unstyled.follow-us li a {
+    color:#329BD1;
+    font-size: 30px;
+}
+/* end of Footer Section */
+
+/* Footer Bottom Section */
+section.footer-bottom {
+    background-color: black;
     color: white;
-  }
+}
 
-  a.btn.btn-collection-list:hover {
+a.site-logo-footer-bottom {
+    text-decoration: none;
+    color: white;
+}
+
+a.site-logo-footer-bottom:hover {
+    color: #329BD1;
+}
+
+i#payment-method-footer-bottom {
+    color: white;
+    font-size: 30px;
+}
+/* end of Footer Bottom Section */
+
+/* Track Order page */
+button#track-my-order {
     background-color: #329BD1;
-  }
-/* end of collection list section */
+    border-color: #329BD1;
+    width: 200px;
+}
 
-/* for image and text section */
+button#track-my-order-submit {
+    background-color: #329BD1;
+    border-color: #329BD1;
+    width: 200px;
+}
 
 
