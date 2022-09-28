@@ -141,6 +141,11 @@ ul.list-unstyled.follow-us li a {
     color:#329BD1;
     font-size: 30px;
 }
+
+.phone-number-footer {
+    position: relative;
+    bottom: 3px;
+}
 /* end of Footer Section */
 
 /* Footer Bottom Section */
