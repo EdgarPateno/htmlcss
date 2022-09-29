@@ -31,7 +31,7 @@ li.nav-item a:hover {
     color: white;
 }
 
-#navbar-cart-icon {
+#navbar-cart-icon a {
     color: #329BD1;
     position: relative;
     top: 9px;
@@ -130,6 +130,15 @@ a.btn.btn-image-text-homepage {
 section.site-footer {
     background-color: black;
     color: white;
+}
+
+section.site-footer ul.list-unstyled li a {
+    text-decoration: none;
+    color: white;
+}
+
+section.site-footer ul.list-unstyled li a:hover {
+    color:#329BD1;
 }
 
 section.site-footer div div div div.card {
