@@ -12,235 +12,79 @@
     </head>
 
     <style>
-      body {
-        font-family: Arial;
-        font-size: 17px;
-        padding: 8px;
-      }
-      
-      * {
-        box-sizing: border-box;
-      }
-      
-      .row {
-        display: -ms-flexbox; 
-        display: flex;
-        -ms-flex-wrap: wrap; 
-        flex-wrap: wrap;
-        margin: 0 -16px;
-      }
-      
-      .col-25 {
-        -ms-flex: 25%;
-        flex: 25%;
-      }
-      
-      .payment-details, .shipping-details {
-        -ms-flex: 50%; 
-        flex: 50%;
-      }
-      
-      .col-75 {
-        -ms-flex: 75%; 
-        flex: 75%;
-      }
-      
-      .col-25,
-      .payment-details,
-      .shipping-details,
-      .col-75 {
-        padding: 0 16px;
-      }
-      
-      .container-checkout {
-        background-color: #f2f2f2;
-        padding: 5px 20px 15px 20px;
-        border: 1px solid lightgrey;
-        border-radius: 3px;
-      }
-      
-      input[type=text] {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-      }
-      
-      label {
-        margin-bottom: 10px;
-        display: block;
-      }
-      
-      .icon-container {
-        margin-bottom: 20px;
-        padding: 7px 0;
-        font-size: 24px;
-      }
-      
-      .btn {
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px;
-        margin: 10px 0;
+      section.anahita-pearl-bracelet-product-page div.card {
         border: none;
-        width: 100%;
-        border-radius: 3px;
-        cursor: pointer;
-        font-size: 17px;
       }
-      
-      .btn:hover {
-        background-color: #45a049;
-      }
-      
-      a {
-        color: #2196F3;
-      }
-      
-      hr {
-        border: 1px solid lightgrey;
-      }
-      
-      span.price {
-        float: right;
-        color: grey;
-      }
-
-      div.credit-card-icons-checkout {
-        position: relative;
-        bottom: 5px;
-      }
-      
-      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-      @media (max-width: 800px) {
-        .row {
-          flex-direction: column-reverse;
-        }
-        .col-25 {
-          margin-bottom: 20px;
-        }
-      }
-      </style>
+    </style>
 
 <body>
 
-  <section class="checkout-page container-sm">
-    <div class="row">
-      <div class="col-75">
-        <div class="container-checkout">
-          <form action="/action_page.php">
-          
-            <div class="row">
-              <div class="shipping-details">
-                <h3>Shipping Address</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="New York">
-
-                <div class="row">
-                  <div class="shipping-details">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="NY">
-                  </div>
-                  <div class="shipping-details">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
-                  </div>
-                </div>
-              </div>
-
-              <div class="payment-details">
-                <h3>Payment Details</h3>
-                <p class="mb-2" style="font-size:12px;">All transactions are secure and encrypted.</p>
-                <div class="d-flex justify-content-sm-between align-items-center">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="payment-method" id="credit-card-payment-method">
-                      <label class="form-check-label me-5" for="credit-card-payment-method">Credit Card</label>
-                    </div>
-                    <div class="credit-card-icons-checkout">
-                      <i class="fa fa-cc-visa" style="color:navy;font-size:20px;"></i>
-                      <i class="fa fa-cc-amex" style="color:blue;font-size:20px;"></i>
-                      <i class="fa fa-cc-mastercard" style="color:red;font-size:20px;"></i>
-                      <i class="fa fa-cc-discover" style="color:orange;font-size:20px;"></i>
-                    </div>
-                </div>
-
-                
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                
-                <input type="text" id="expmonth" name="expmonth" placeholder="Expiration Month">
-                <div class="row">
-                  <div class="payment-details">
-                    <input type="text" id="expyear" name="expyear" placeholder="Expiration Year">
-                  </div>
-                  <div class="payment-details">
-                    <input type="text" id="cvv" name="cvv" placeholder="Security Code">
-                  </div>
-                </div>
-
-                <div class="d-flex justify-content-sm-between align-items-center">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="payment-method" id="paypal-payment-method">
-                    <label class="form-check-label me-5" for="paypal-payment-method">Paypal</label>
-                  </div>
-                  <div class="credit-card-icons-checkout">
-                    <img src="images/icons/PayPal.svg" style="width:80px; height:60px;">
-                  </div>
-                </div>
-
-              </div>
-              
-            </div>
-            <label>
-              <input type="checkbox" checked="checked" name="sameadr"> Billing address same as shipping
-            </label>
-            <input type="submit" value="Complete Payment" class="btn">
-          </form>
+  <section class="anahita-pearl-bracelet-product-page container-sm">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
+      <div class="col">
+        <div class="card">
+          <img src="images/bracelet-photos/anahita-pearl.png" class="card-img-top" alt="...">
         </div>
       </div>
-      <div class="col-25">
-        <div class="container-checkout">
-          <div class="d-flex justify-content-sm-between align-items-center">
-            <div class="p-2"><img src="images/earring photos/abelia.png" style="width:50px; height:50px;"></div>
-            <div class="p-2">Abelia Earrings</div>
-            <div class="p-2">$500</div>
-          </div>
-
-          <div class="d-flex justify-content-sm-between align-items-center">
-            <div class="p-2"><img src="images/bracelet photos/anahita-pearl.png" style="width:50px; height:50px;"></div>
-            <div class="p-2">Anahita Pearl</div>
-            <div class="p-2">$500</div>
-          </div>
-
-          <div class="d-flex justify-content-sm-between align-items-center">
-            <div class="p-2"><img src="images/necklace_collection_photos/kiss-necklace.png" style="width:50px; height:50px;"></div>
-            <div class="p-2">Kiss Necklace</div>
-            <div class="p-2">$500</div>
-          </div>
-          <hr>
-          <div class="d-flex justify-content-sm-between align-items-center">
-            <div class="p-2">Shipping</div>
-            <div class="p-2"></div>
-            <div class="p-2">Free</div>
-          </div>
-          <hr>
-          <div class="d-flex justify-content-sm-between align-items-center">
-            <div class="p-2">Total</div>
-            <div class="p-2"></div>
-            <div class="p-2">$1,500</div>
+      <div class="col">
+        <div class="card mt-5">
+          <div class="card-body">
+            <small>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span>300 Trusted Reviews</span>
+            </small>
+            <h5 class="h1">Anahita Pearl Bracelet</h5>
+            <p class="h5"><del>$200 USD</del> &nbsp;$100 USD</p>
+            <p></p>
+            <p>Quantity</p>
+            <input class="text-center" type="number" name="quantity" style="width:100px;" value="1" />
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="product-description-tabs">
+    <div class="container-sm">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping-tab-pane" type="button" role="tab" aria-controls="shipping-tab-pane" aria-selected="false">Shipping and Cancellation</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="return-tab" data-bs-toggle="tab" data-bs-target="#return-tab-pane" type="button" role="tab" aria-controls="return-tab-pane" aria-selected="false">Return, Refund, Exchange</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="guarantee-tab" data-bs-toggle="tab" data-bs-target="#guarantee-tab-pane" type="button" role="tab" aria-controls="guarantee-tab-pane" aria-selected="false">Lifetime Guarantee</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+          <p class="mt-5">The unexpected pairing of bold links
+          and refined pearls define this sterling silver bracelet. Inspired by the bold architecture and edge of New York 
+          City, Pateño Jewellers combines gauge links industrial shapes in striking silhouettes. Mix and match this 
+          bracelet with a classic pearl bracelet for the perfect balance of utilitarian style and glamour.</p>
+          <ul>
+            <li>Sterling silver with freshwater cultured pearls.</li>
+            <li>Size medium</li>
+            <li>Fits wrist up to 6.25"</li>
+            <li>Pearls are 5-6 mm each</li>
+            <li>Designed to be comfortable and easy to wear</li>
+            <li>Perfect for any occasion</li>
+          </ul> 
+        </div>
+        <div class="tab-pane fade" id="shipping-tab-pane" role="tabpanel" aria-labelledby="shipping-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="return-tab-pane" role="tabpanel" aria-labelledby="return-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="guarantee-tab-pane" role="tabpanel" aria-labelledby="guarantee-tab" tabindex="0">...</div>
+      </div>
+    </div>
+  </section>
+  
 </body>
 </html>

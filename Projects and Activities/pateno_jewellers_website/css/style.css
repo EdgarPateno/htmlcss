@@ -27,7 +27,7 @@ button#navbar-search:hover {
     background-color: #329BD1;
 }
 
-li.nav-item a:hover {
+li.nav-item a.nav-link:hover {
     color: white;
 }
 
@@ -105,6 +105,11 @@ section.collection-list div div div div.card {
 a.btn.btn-image-text-homepage {
     background-color: #329BD1;
     width: 200px;
+    color: white;
+}
+
+a.btn.btn-image-text-homepage:hover {
+    background-color: #329BD1;
     color: white;
 }
 /* end of image and text section */
@@ -190,5 +195,45 @@ button#track-my-order-submit {
     border-color: #329BD1;
     width: 200px;
 }
+/* end of Track Order page */
 
+/* Cart page */
+h6.cart-page-continueshopping {
+    position: relative;
+    top: 5px;
+}
 
+h6.cart-page-continueshopping a {
+    text-decoration: none;
+    color:#329BD1;
+}
+
+a.continue-checkout-button {
+    background-color: #329BD1;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+i#cart-page-cc-icon {
+    color:#329BD1;
+    font-size: 25px;
+}
+/* end of Cart Page */
+
+/* Ring Collection Page */
+a.btn.btn-explore-ring-collection {
+    background-color: #329BD1;
+    color: white;
+}
+
+a.btn.btn-explore-ring-collection:hover {
+    background-color: #329BD1;
+    color: white;
+}
+/* end of Ring Collection Page */
+
+/* Ring Product Page */
+section.anahita-pearl-bracelet-product-page div.card {
+    border: none;
+}
