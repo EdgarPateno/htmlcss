@@ -14,7 +14,7 @@
     <style>
         .parallax-ring-page-1 {
             /* The image used */
-            background-image: url("images/parallax_photos/ring-collection-page-parallax-1.png");
+            background-image: url("images/parallax_photos/ring-parallax-final.png");
           
             /* Set a specific height */
             min-height: 300px; 
@@ -25,32 +25,9 @@
             background-repeat: no-repeat;
             background-size: cover;
           }      
-          .parallax_2 {
-            /* The image used */
-            background-image: url("images/parallax_photos/parallax_2.png");
-          
-            /* Set a specific height */
-            min-height: 300px; 
-          
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+          .pagination {
+            --bs-pagination-border-color: black;
           }       
-          .parallax_3 {
-            /* The image used */
-            background-image: url("images/parallax_photos/parallax_3.png");
-          
-            /* Set a specific height */
-            min-height: 300px; 
-          
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }           
       </style>
 
 <body>
@@ -290,6 +267,18 @@
             </div>
         </section>
           <!-- end of ring collection page -->
+
+          <!-- Pagination -->
+          <nav aria-label="ring-collection-page-navigation">
+            <ul class="pagination ring-collection-page justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+          <!-- end of Pagination -->
           
         <div class="parallax-ring-page-1"></div>  
 
@@ -378,7 +367,7 @@
                   <h5 class="card-title">Friendly Support</h5>
                   <p class="card-text">For any questions and concerns, please don't hesitate to contact us below:</p>
                   <p><i class="fa fa-envelope" style="font-size:16px;color:white;"></i>&nbsp;support@patenojewellers.com</p>
-                  <p><i class="fa fa-mobile-phone" style="font-size:25px;color:white;"></i>&nbsp;+639123456789</p>
+                  <p><i class="fa fa-mobile-phone" style="font-size:25px;color:white;"></i>&nbsp;<span class="phone-number-footer">+639123456789</span></p>
                 </div>
               </div>
             </div>
@@ -391,14 +380,13 @@
   <section class="footer-bottom pb-5">
     <div class="container-fluid">
       <div class="d-flex justify-content-between">
-        <div class="p-3">&#169;2022, <a class="site-logo-footer-bottom" href="miniproject_website_1.html">Pateño Jewellers LTD.</a> &nbsp;ALL RIGHTS RESERVED</div>
+        <div class="p-3">&#169;2022, <a class="site-logo-footer-bottom" href="homepage.html">Pateño Jewellers LTD.</a> &nbsp;ALL RIGHTS RESERVED</div>
         <div class="p-3">
           <i class="fa fa-cc-visa" id="payment-method-footer-bottom"></i>
           <i class="fa fa-cc-amex" id="payment-method-footer-bottom"></i>
           <i class="fa fa-cc-mastercard" id="payment-method-footer-bottom"></i>
           <i class="fa fa-cc-discover" id="payment-method-footer-bottom"></i>
           <i class="fa fa-cc-paypal" id="payment-method-footer-bottom"></i>
-          <i class="fa fa-cc-discover" id="payment-method-footer-bottom"></i>
         </div>
       </div>
     </div>

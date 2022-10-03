@@ -237,3 +237,19 @@ a.btn.btn-explore-ring-collection:hover {
 section.anahita-pearl-bracelet-product-page div.card {
     border: none;
 }
+
+div.add-to-cart-button a {
+    background-color: #329BD1;
+    color: white;
+    border-color: #329BD1;
+}
+
+div.add-to-cart-button a.btn.btn-info:hover {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+i#product-page-cc-icon {
+    font-size: 30px;
+}
