@@ -81,9 +81,17 @@ li.nav-item a.nav-link:hover {
  }
  /* end of as featured in section */
 
-/* collection list section */
+/* shop by category section */
 section.collection-list div div div div.card {
     border: none;
+}
+
+img#shop-by-category-image {
+    background-color: #329BD1;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .checked {
@@ -99,7 +107,7 @@ section.collection-list div div div div.card {
   a.btn.btn-collection-list:hover {
     background-color: #329BD1;
   }
-/* end of collection list section */
+/* end of shop by category section */
 
 /* for image and text section */
 a.btn.btn-image-text-homepage {
@@ -253,3 +261,12 @@ div.add-to-cart-button a.btn.btn-info:hover {
 i#product-page-cc-icon {
     font-size: 30px;
 }
+
+/* for Pagination */
+.pagination {
+    --bs-pagination-border-color: white;
+    --bs-pagination-color: white;
+    --bs-pagination-hover-bg: white;
+    --bs-pagination-bg: #329BD1;
+  } 
+/* end of Pagination */  
