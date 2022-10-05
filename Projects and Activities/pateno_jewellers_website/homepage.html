@@ -25,7 +25,7 @@
             }      
             .parallax_2 {
               /* The image used */
-              background-image: url("images/parallax_photos/parallax_2.png");
+              background-image: url("images/parallax_photos/ring-parallax_3.png");
             
               /* Set a specific height */
               min-height: 300px; 
@@ -36,19 +36,49 @@
               background-repeat: no-repeat;
               background-size: cover;
             }       
-            .parallax_3 {
-              /* The image used */
-              background-image: url("images/parallax_photos/parallax_3.png");
-            
-              /* Set a specific height */
-              min-height: 300px; 
-            
-              /* Create the parallax scrolling effect */
-              background-attachment: fixed;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }           
+             
+            video.necklace-making-video {
+              max-width: 100%;
+              height: auto;
+            }
+
+            section.homepage-banner-video div.container-liquid {
+              position: relative;
+            }
+
+            .text-box.homepage-banner-video-title {
+              position: absolute;
+              top: 30%;
+              left: 5%;
+              display: flex;
+              color: white;
+            }
+
+            span.is-on-us {
+              color: #329BD1;
+            }
+
+            a.btn.btn-homepage-video-banner {
+              background-color: #329BD1;
+              color: white;
+            }
+
+            a.btn.btn-homepage-video-banner:hover {
+              background-color: #329BD1;
+            }
+
+            @media only screen and (max-width: 375px) {
+              .text-box.homepage-banner-video-title {
+                top: 20%;
+                left: 2%;
+            }
+              h3.h1.your-proposal {
+                font-size:16px;
+              }
+              a.btn.btn-homepage-video-banner {
+                font-size: 10px;
+              }
+            }
         </style>
        
     </head>
@@ -108,7 +138,7 @@
     </section>
     <!-- end of header section -->
 
-    <!-- first homepage banner -->
+    <!-- first homepage banner
     <section class="homepage_banner">
         <img src="images/homepage_banner_2.png" alt="woman-wearing-jewelry" style="width:100%;">
         <div class="bottom-left">
@@ -116,7 +146,23 @@
           <h4 class="h2">a woman's best friend...</h4>
           <a href="#" class="homepage-banner-button">SHOP NOW</a>
     </section>
-    <!-- end of first homepage banner -->
+    end of first homepage banner -->
+
+    <!-- Homepage Banner Video section -->
+    <section class="homepage-banner-video">
+      <div class="container-liquid">
+        <video class="necklace-making-video" width="1920" no-controls autoplay loop muted>
+          <source src="videos/homepage-video-banner.mp4" type="video/mp4">
+        </video>
+        <div class="text-box homepage-banner-video-title">
+          <h3 class="h1 your-proposal">Your Proposal...<br>
+            <span class="is-on-us">is ON US!</span><br>
+            <a href="ring_collection_page.html" class="btn btn-homepage-video-banner">SHOP RINGS</a>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- end of Homepage Banner Video section -->
 
     <!-- As Featured In section -->    
     <section class="as-featured-in mb-5">
@@ -163,6 +209,8 @@
     </section>
     <!-- end of As Featured In section -->
 
+    <hr style="visibility:hidden;">
+
     <!-- Our Best Sellers Section -->
 
     <section class="our-best-sellers container-sm">
@@ -179,7 +227,7 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <p>600+ Trusted Reviews</p>
+                <p>600 Trusted Reviews</p>
                 <a class="btn btn-collection-list" href="#" role="button">SHOP NOW</a>
               </div>
           </div>  
@@ -342,6 +390,7 @@
 
     <!-- end of Our Best Sellers Section -->
     
+    <hr style="visibility:hidden;">
 
     <!-- for collection list section -->
     <section class="collection-list my-5">
@@ -358,7 +407,7 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <p>600+ Trusted Reviews</p>
+                  <p>600 Trusted Reviews</p>
                   <a class="btn btn-collection-list" href="#" role="button">EXPLORE</a>
                 </div>
             </div>  
@@ -390,7 +439,7 @@
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
-                  <p>200+ Trusted Reviews</p>
+                  <p>200 Trusted Reviews</p>
                   <a class="btn btn-collection-list" href="#" role="button">EXPLORE</a>
                 </div>
             </div>
