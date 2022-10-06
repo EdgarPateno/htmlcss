@@ -70,16 +70,20 @@ li.nav-item a.nav-link:hover {
 }
  /* end of homepage first banner section */ 
 
+ 
  /* as featured in section */
- section.as-featured-in div img {
-    width: 200px;
-    height: auto;
- }
-
  section.as-featured-in div.card {
     border: none;
  }
+  
  /* end of as featured in section */
+
+ /* Our Best Sellers section */
+ h3.our-best-sellers-title {
+    margin-top: 30px;
+ }
+/* Our Best Sellers section */
+
 
 /* shop by category section */
 section.collection-list div div div div.card {
@@ -98,13 +102,13 @@ img#shop-by-category-image {
     color: orange;
   }
 
-  .btn-collection-list {
+  a.btn.btn-primary {
     background-color: #329BD1;
-    width: 150px;
     color: white;
+    border-color: #329BD1;
   }
 
-  a.btn.btn-collection-list:hover {
+  a.btn.btn-primary:hover {
     background-color: #329BD1;
   }
 /* end of shop by category section */
@@ -122,6 +126,36 @@ a.btn.btn-image-text-homepage:hover {
 }
 /* end of image and text section */
 
+/* banner image section */
+section.homepage-banner-image div.container-liquid {
+    position: relative;
+}
+
+div.text-box .display-3.homepage-banner-image-overlaytext {
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    color: #329BD1;
+}
+
+div.text-box a {
+    position:absolute;
+    top: 60%;
+    left: 5%;
+    color: #329BD1;
+}
+
+@media only screen and (max-width: 425px) {
+    div.text-box a {
+        font-size: 10px;
+    }
+    div.text-box .display-3.homepage-banner-image-overlaytext {
+        font-size: 20px;
+    }
+}
+
+/* end of banner image section */
+
  /* for trust badges section */
  section.trust-badges {
     margin: 20px;
@@ -138,6 +172,18 @@ a.btn.btn-image-text-homepage:hover {
     margin: 0 auto;
 }
 /* end of trust badges section */
+
+/* Newsletter Section */
+section.newsletter {
+    padding: 50px;
+}
+
+button.newsletter.btn.btn-info {
+    background-color: #329BD1;
+    border-color: #329BD1;
+    color: white;
+}
+/* end of Newsletter Section */
 
 /* Footer Section */
 section.site-footer {
@@ -238,6 +284,11 @@ a.btn.btn-explore-ring-collection {
 a.btn.btn-explore-ring-collection:hover {
     background-color: #329BD1;
     color: white;
+}
+
+button.btn.btn-primary.newsletter-subscribe {
+    background-color: #329BD1;
+    border-color: #329BD1;
 }
 /* end of Ring Collection Page */
 
