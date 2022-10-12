@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <style>
+        #result2, #result {
+            font-size: 30px;
+        }
+    </style>
+
+<body>
+
+    <div class="container">
+        <div class="odd-even-numbers">
+            <input type="number" id="anynumber" placeholder="write any number" value1="" />
+            <button onclick="Check1()">Check</button>
+            <div id="result"></div>
+        </div>
+    
+
+        <div class="vowel-consonant">
+            <input type="text" id="alphabet" placeholder="write any letter" value2="" />
+            <button onclick="Check2()">Check</button>
+            <div id="result2"></div>
+        </div>
+    </div>
+
+        <script>
+            function Check1(){
+                let value1 = (document.getElementById('anynumber').value);
+                
+                
+                if((value1 % 2) == 0){
+                document.getElementById('result').innerHTML = "I'm an EVEN number.";
+                }else{
+                document.getElementById('result').innerHTML = "I'm an ODD number.";
+                }
+                }
+        
+            function Check2(){
+                let value2 = (document.getElementById('alphabet').value);
+                
+                
+                if(value2 == "a" || value2 == "e" || value2 == "i" || value2 == "o" || value2 == "u"
+                || value2 == "A" || value2 == "E" || value2 == "I" || value2 == "O" || value2 == "U"){
+                document.getElementById('result2').innerHTML = "This is a VOWEL.";
+
+                }else{
+                document.getElementById('result2').innerHTML = "This is a CONSONANT.";
+                }
+                }
+        </script>
+ 
+</body>
+</html>
