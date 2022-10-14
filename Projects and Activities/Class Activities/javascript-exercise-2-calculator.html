@@ -9,6 +9,7 @@
       <button onclick="calculate(this)" value="-">-</button>
       <button onclick="calculate(this)" value="*">*</button>
       <button onclick="calculate(this)" value="/">/</button>
+      <button onclick="calculate(this)" value="=">=</button>
     </ol>
   </div>
 
@@ -32,6 +33,9 @@
         break;
         case "/":
         document.getElementById("result").value = num1 / num2;
+        break;
+        default: 
+        document.getElementById("result").innerHTML = "nothing";
         break;
       }
 
