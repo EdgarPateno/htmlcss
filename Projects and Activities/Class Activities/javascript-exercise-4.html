@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <html>
+    <head>
+        
+    </head>
+    <body>
+
+        <h3>WHILE LOOP</h3>
+        
+        <div id="result"></div>
+
+        
+        <script>
+
+            //find consecutive numbers
+            let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
+
+
+            function countConsecutiveValue(list, consecutive=2){
+                let prevNumber = 0;
+                let totalConsecutive = 0;
+                let sequence = 0;
+                for(let i=0; i< list.length; i++){
+                    if(prevNumber == list[i]){
+                        sequence++;
+                    }else{
+                        sequence = 0;
+                    }
+
+                    if(sequence == (consecutive - 1)){
+                        totalConsecutive++;
+                        sequence = 0;
+                        prevNumber = 0;
+                    }else{
+                        prevNumber = list[i];   
+                    }
+                }
+
+                return totalConsecutive;
+            }
+
+            console.log(countConsecutiveValue(numbers));
+            console.log(countConsecutiveValue(numbers, 3));
+
+
+            //find the oldest and youngest
+
+            let staff = [
+                {
+                    name: "Oliver",
+                    age: 38,
+                },
+                {
+                    name: "Ben",
+                    age: 25,
+                },
+                {
+                    name: "Jessica",
+                    age: 23,
+                },
+                {
+                    name: "Piper",
+                    age: 32,
+                },
+                {
+                    name: "Juan",
+                    age: 24,
+                },
+                {
+                    name: "Ana",
+                    age: 21,
+                },
+                {
+                    name: "Mark",
+                    age: 28,
+                },
+                {
+                    name: "Michael",
+                    age: 40,
+                },
+                ]
+
+                function getOlder(staff) { 
+                    let older = []; 
+                    for (let index in staff) { 
+                        if (older.length <= 0) { 
+                            older.push(staff[index]); 
+                        } else { 
+                            if (older[older.length-1].age === staff[index].age) { 
+                                older.push(staff[index]); 
+                            } 
+                            if (staff[index].age > older[older.length-1].age) { 
+                                older = []; 
+                                older.push(staff[index]); 
+                            } 
+                        } 
+                    } 
+                    return older; 
+                } 
+            
+
+            </script>
+
+    </body>
+</html>
