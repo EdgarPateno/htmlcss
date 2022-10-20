@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/kodego.js"></script>
+        
+
+    </head>
+
+    <style>
+       
+    </style>
+
+<body>
+
+    <input type="text" placeholder="enter any number" onkeyup="onkeyupHandler(event)">
+    <div id="result-divisibleby7"></div>
+    <div id="result-table"></div>
+
+<script>
+
+    // divisible by 7
+
+    function nextNumberDivisible(number) {
+        for(number; number <= number + 7; number++){
+            if(number % 7 == 0) {
+            return number;
+        }
+            console.log('tries');
+        }
+        
+    }
+
+    function onkeyupHandler(e) {
+        document.getElementById('result-divisibleby7').innerHTML = nextNumberDivisible(e.currentTarget.value);
+    }
+
+    
+
+
+        //creating a table
+
+        let invoiceItems = [
+                {description: "Mouse", Qty: 3, unitPrice: 200}, 
+                {description: "Keyboard", Qty: 3, unitPrice: 400},
+                {description: "Monitor", Qty: 6, unitPrice: 5400},
+                {description: "CPU Tower Case", Qty: 3, unitPrice: 1200},
+                {description: "Headset", Qty: 3, unitPrice: 500},
+                {description: "UPS", Qty: 1, unitPrice: 4000},
+        ];
+
+        let tableElem = "<div><table class='table'>";
+            tableElem += "<tr>";    
+            tableElem += "<th>Description</th>";    
+            tableElem += "<th>Quantity</th>";    
+            tableElem += "<th>Unit Price</th>";
+            tableElem += "<th>Amount</th>";    
+            tableElem += "</tr>"; 
+
+            invoiceItems.forEach(function(value, index, array){
+            tableElem += "<tr>";    
+            tableElem += "<td>"+ value.description +"</td>";    
+            tableElem += "<td>"+ value.Qty +"</td>";    
+            tableElem += "<td>"+ "$" + value.unitPrice +"</td>";
+            tableElem += "<td>"+ "$" + value.Qty * value.unitPrice +"</td>";    
+            tableElem += "</tr>";    
+            });
+
+            document.getElementById("result-table").innerHTML += tableElem + "</table></div>";
+
+
+           
+    </script>
+
+</body>
+</html>
+    
