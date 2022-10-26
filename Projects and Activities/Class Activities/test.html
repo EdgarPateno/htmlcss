@@ -10,179 +10,125 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <style>
+        div.card.backgroundImageBanner {
+          position:absolute;
+          border: none;
+        }
 
-          .fa.fa-star.checked {
-            font-size: 20px;
-            color: orange;
+        div.card.whySwishedCard {
+          width: 30%;
+          text-align: left;
+          position: absolute;
+          top: 9%;
+          right: 5%;
+          padding: 10px 25px;
+          border: none;
+        }
+
+        h6.whySwishedBannerHeading {
+          color:#e7867c;
+          font-weight:600;
+        }
+
+        a.btn.whySwishedBannerButton {
+          border:2px solid #e7867c;
+          background-color: #e7867c;
+          color: white;
+          width:80%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+          div.card.whySwishedCard {
+            width:40%;
+            padding:10px 15px;
+            top:2%;
+            right:3%;
           }
 
-          div.card {
-            border: none;
+          a.btn.whySwishedBannerButton {
+            font-size: 11px;
           }
 
-          a.btn.viewProduct {
-            background-color: #e7867c;
-            border-color: #e7867c;
-            color: white;
+          h2.whySwishedTitle {
+            font-size: 24px;
+            font-weight: 600;
+          }
+
+          h6.whySwishedBannerHeading {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 13px;
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          div.card.whySwishedCard {
+            width: 65%;
+            top:83%;
+            right:18%; 
+            border: 1px solid #e7867c;         
+          }
+            
+        }
+
+        @media only screen and (max-width: 425px) {
+          div.card.whySwishedCard {
             width: 100%;
+            top:83%;
+            right:0%; 
+            border: 1px solid #e7867c;         
           }
+            
+        }
+        
 
-          a.btn.viewProduct:hover {
-            background-color: #e7867c;
-            color: white;
-            width: 100%;
-          }
-
-          @media only screen and (max-width: 1440px) {
-            h5.card-title.productTitle {
-              font-size: 33px;
-            }
-          }
-          @media only screen and (max-width: 1024px) {
-            h5.card-title.productTitle {
-              font-size: 22px;
-            }
-            small.productPrice.uppercase {
-              font-size: 13px;
-            }
-          }
-
-          @media only screen and (max-width: 768px) {
-            a.btn.viewProduct {
-              font-size: 13px;
-            }
-            h5.card-title.productTitle {
-              font-size: 16px;
-            }
-          }
-
-          @media only screen and (max-width: 425px) {
-            h5.card-title.productTitle {
-              font-size: 19px;              
-            }
-            small.productPrice.uppercase {
-              font-size: 11px;
-            }
-          }
-
-          @media only screen and (max-width: 375px) {
-            a.btn.viewProduct {
-              font-size: 13px;
-            }
-            h5.card-title.productTitle {
-              font-size: 16px;
-            }
-            small.productPrice.uppercase {
-              font-size: 14px;
-            }
-          }
-
-          @media only screen and (max-width: 320px) {
-            a.btn.viewProduct {
-              font-size: 10px;
-            }
-
-            h5.card-title.productTitle {
-              font-size: 14px;
-            }
-
-            small.productPrice.uppercase {
-              font-size: 11px;
-            }
-
-            div.star-widgets {
-              font-size: 10px;
-            }
-          }
-
+        
         </style>
 
     </head>
 
     <body>
 
-      <section class="featuredCollectionHomepage container">
-        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-2">
-          
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://cdn.shopify.com/s/files/1/0515/2656/6051/files/tent.png?v=1666164890" alt="swished popup tent" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title productTitle">Swished Pop-up Tent</h5>
-                  <small class="productPrice uppercase"><del>£155.00 GBP</del> &nbsp; £119.00 GBP</small>
-                  <div class="star-widgets">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn viewProduct">VIEW PRODUCT</a>
-                </div>
-              </div>
+    <section class="whySwishedImageBanner order-sm-2 order-md-2 my-3">
+      <div class="card backgroundImageBanner">
+        <img src="https://cdn.shopify.com/s/files/1/0501/2950/2366/files/image_banner.png?v=1660234757&width=1500" class="card-img" alt="woman sitting on the beach">  
+        <div class="card whySwishedCard py-4">
+          <h2 class="whySwishedTitle text-center">WHY SWISHED</h2>
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="images/free-shipping.png" alt="free shipping truck icon">
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://cdn.shopify.com/s/files/1/0515/2656/6051/files/avocado_fridge.png?v=1666164890" alt="portable fridge avocado" class="card-img-top" alt="...">
-                <div class="card-body productTitle">
-                  <h5 class="card-title productTitle">Portable Fridge - Avocado</h5>
-                  <small class="productPrice uppercase"><del>£269.00 GBP</del> &nbsp; £139.00 GBP</small>
-                  <div class="star-widgets">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn viewProduct">VIEW PRODUCT</a>
-                </div>
-              </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="whySwishedBannerHeading mt-2">FREE Shipping</h6>
+              <p>from our Essex Warehouse</p>        
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://cdn.shopify.com/s/files/1/0515/2656/6051/files/tote_black.png?v=1666164890" alt="drink tote black" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title productTitle">Drink Tote - Black</h5>
-                  <small class="productPrice uppercase"><del>£59.00 GBP</del> &nbsp; £39.00 GBP</small>
-                  <div class="star-widgets">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn viewProduct">VIEW PRODUCT</a>
-                </div>
-              </div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="images/guarantee.png" alt="first-popup-guarantee">
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="https://cdn.shopify.com/s/files/1/0515/2656/6051/files/white_fridge.png?v=1666164890" alt="portable fridge white" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title productTitle">Portable Fridge - White</h5>
-                  <small class="productPrice uppercase"><del>£269.00 GBP</del> &nbsp; £139.00 GBP</small>
-                  <div class="star-widgets">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn viewProduct">VIEW PRODUCT</a>
-                </div>
-              </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="whySwishedBannerHeading mt-2">First Pop-up Guarantee</h6>
+              <p>We're so confident you'll love your Swished tent or accessory. If you don't we will refund you.</p>        
             </div>
-          
+          </div>
+
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="images/enjoy-summer.png" alt="enjoy-summer-icon">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h6 class="whySwishedBannerHeading mt-3">Enjoy the British Summer</h6>
+              <p>Sun, surf, sand. Good vibes and great times. Swished is here to help you celebrate all that is Summer.</p>        
+            </div>
+          </div>
+          <div class="text-center"><a href="" class="btn whySwishedBannerButton">VIEW OUR PRODUCTS</a></div>
         </div>
-      </section>
+      </div>
+    </section>
 
     </body>
 </html>

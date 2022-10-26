@@ -25,6 +25,9 @@
         let text6 = "    Jehovah   ";
         let text7 = "100";
 
+        let quote = "To know how much there is to know is the beginning of learning to live.";
+        let lotto = [18, 9, 54, 36, 45, 27];
+
         // document.getElementById("result").innerHTML = text.slice(6, 11) + "<br/>"; //to display the "World". Starts from 0
 
         // document.getElementById("result").innerHTML += text.substr(6, 5) + "<br/>"; //cuts and displays the "World"
@@ -49,9 +52,22 @@
 
         // document.getElementById("result").innerHTML += text5.charAt(4);
 
+        let x = lotto.pop();
+        document.getElementById("result").innerHTML = ("" + x).padStart(4, "0") + "<br/>";
 
+        lotto = lotto.pop();
+        document.getElementById("result").innerHTML += "test: " + lotto.toString().padStart(4, "0");
+
+        lotto.unshift(63);
+        document.getElementById("result").innerHTML += lotto + "<br/>";
+
+        document.getElementById("result").innerHTML += quote.match(/know/g).length + "<br/>";
+
+        lotto = lotto.shift();
+        //document.getElementById("result").innerHTML += lotto.toString().padStart(5, 0) + "<br/>";
+        document.getElementById("result").innerHTML += "lotto value: " + lotto.toString().padStart(5, "0");
         
-
+        
 
 
 

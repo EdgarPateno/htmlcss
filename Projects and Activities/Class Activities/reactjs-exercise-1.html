@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PATENO JEWELLERS - Shop Premium Quality Jewellery</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+        </style>
+
+        <body>
+
+
+            <script>
+
+                class Furniture {
+                    constructor(materials, size){
+                        this.materials = materials;
+                        this.size = size;
+                        
+                    }
+                }
+
+                class Tables extends Furniture {
+                    constructor(materials, size){
+                        super("oakwood", "small");
+                        this.materials = materials;
+                        this.size = size;
+                    }
+
+                    getTables() {
+                        return "This table is " + "made from " + this.materials + " in size " + this.size + ".";
+                    }
+                }
+
+                class Mattress extends Furniture {
+                    constructor(materials, size){
+                        super("memory foam", "king");
+                        this.materials = materials;
+                        this.size = size;
+                    }
+
+                    getMattress() {
+                        return "This mattress is " + "made from " + this.materials + " in size " + this.size + ".";
+                    }
+                }
+
+                let furniture1 = new Tables("oakwood", "small");
+                let furniture2 = new Mattress("memory foam", "king");
+
+                document.write(furniture1.getTables());
+                document.write("<br/>");
+                document.write(furniture2.getMattress());
+
+            </script>
+
+        </body>
+
+    </html>
